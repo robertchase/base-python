@@ -15,3 +15,4 @@ shell:
 
 build:
 	docker build -t $(IMAGE) -f Dockerfile .
+	docker build -t $(IMAGE)-sql -f Dockerfile-sql .

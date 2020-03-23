@@ -1,0 +1,8 @@
+FROM base-python
+
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+    default-mysql-client
+
+RUN pip install \
+    mycli \
+    pycli
